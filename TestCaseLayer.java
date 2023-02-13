@@ -1,13 +1,16 @@
 package genericByYadavRahul;
 
 public class TestCaseLayer {
+	public void m1(int a){
+		a=28;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Utility obj = new Utility("learn");
 //		obj.report();
 		obj.createTest("tcoo1");
-
+System.out.println("updated");
 		obj.browserLaunch("Chrome");
 		obj._hitURL("http://localhost:8888");
 		obj.getElement("name", "user_name");
